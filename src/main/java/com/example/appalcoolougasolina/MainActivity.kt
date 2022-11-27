@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         if (validaCampos){
             calcularMelhorPreco(precoAlcool,precoGasolina)
         }else{
-            txtResultado.text = "Preencha os preços primeiro"
+            txtResultado.text = getString(R.string.edt_result)
         }
 
     }

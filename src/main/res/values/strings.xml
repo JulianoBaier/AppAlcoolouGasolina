@@ -5,4 +5,5 @@
     <string name="resultado">Nenhuma opção escolhida</string>
     <string name="gasolina">Melhor usar Gasolina</string>
     <string name="alcool">Melhor usar Álcool</string>
+    <string name="edt_result">Preencha os preços primeiro</string>
 </resources>
