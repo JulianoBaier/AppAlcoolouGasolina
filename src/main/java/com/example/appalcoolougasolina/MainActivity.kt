@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
 
         //laço do resultado da conta
         if(resultadoPreco>=0.7){
-            txtResultado.text = "Melhor usar Gasolina"
+            txtResultado.text = getString(R.string.gasolina)
         }else{
-            txtResultado.text = "Melhor usar Álcool"
+            txtResultado.text = getString(R.string.alcool)
 
         }
     }

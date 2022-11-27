@@ -3,4 +3,6 @@
     <!-- String tela inicial -->
     <string name="textViewDescricao">Saiba a melhor opção para o abastecimento do seu carro</string>
     <string name="resultado">Nenhuma opção escolhida</string>
+    <string name="gasolina">Melhor usar Gasolina</string>
+    <string name="alcool">Melhor usar Álcool</string>
 </resources>
