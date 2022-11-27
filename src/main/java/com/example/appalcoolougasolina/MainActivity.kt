@@ -14,12 +14,16 @@ class MainActivity : AppCompatActivity() {
 
     //função calcular onClick
     fun calcularPreco(view: View){
+
+        //capturanto string dos editText
         val precoAlcool =edtPrecoAlcool.text.toString()
         val precoGasolina =edtPrecoGasolina.text.toString()
 
+        // varialvel booleana que amazena informação captura do edtText esta vazia ou preenchida
         val validaCampos = validarCampos(precoAlcool,precoGasolina)
 
         if (validaCampos){
+            //
             calcularMelhorPreco(precoAlcool,precoGasolina)
         }else{
             txtResultado.text = getString(R.string.edt_result)
@@ -35,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         // resultado ad formula
         val resultadoPreco = valorAlcool/valorGasolina
 
-        //laço do resultado da conta
+        //laço da formula
         if(resultadoPreco>=0.7){
             txtResultado.text = getString(R.string.gasolina)
         }else{
@@ -53,13 +57,20 @@ class MainActivity : AppCompatActivity() {
         //veirificando se campo do preco alcool esta vazio
         if(precoAlcool==null||precoAlcool.equals("")){
 
+            //se o campo do edtText esta vazio determina-se false
             camposValidados=false
         }
 
         //veirificando se campo do preco gasolina esta vazio
         else if(precoGasolina==null||precoGasolina.equals("")) {
+
+            //se o campo do edtText esta vazio determina-se false
             camposValidados = false
         }
+
+        // Essa função tem como objetivo retornar um booleano para a
+        //  função calcularPreco que verifica a condição  e que chama a função calcularMelhorPreco
+        //  para calcular sem erros relacionado a captura dos edtTexts
         return camposValidados
     }
 
